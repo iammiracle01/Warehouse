@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Склад</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="my-4">Секции</h1>
+        <ul class="list-group mb-4">
+            {% for section in sections %}
+                <li class="list-group-item">{{ section.section_name }}</li>
+            {% endfor %}
+        </ul>
+        
+        <h1 class="my-4">Товары</h1>
+        <ul class="list-group">
+            {% for product in products %}
+                <li class="list-group-item">
+                    <strong>{{ product.product_name }}</strong><br>
+                    <span>Секции: {{ product.section.section_name }}</span><br>
+                    <span>Цена: ${{ product.price_per_unit }}</span><br>
+                    <span>В наличии: {{ product.is_product_available }}</span>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
