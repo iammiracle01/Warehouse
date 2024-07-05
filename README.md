@@ -1,6 +1,4 @@
-### README for Warehouse API
 
----
 
 # Warehouse API
 
