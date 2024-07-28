@@ -241,14 +241,4 @@ Once the application is running, you can interact with the API using tools like 
     }
     ```
 
-## Contributing
-
-Contributions are welcome! Please read the [contribution guidelines](CONTRIBUTING.md) first.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
 This README provides a comprehensive overview of the Warehouse API, including installation steps, usage instructions, and detailed API endpoint documentation.
